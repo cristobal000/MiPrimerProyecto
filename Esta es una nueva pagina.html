@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>y87056 vb io
+</head>
+<body>
+    <!-- boton con evento click muestra hora y fecha actual  -->
+    <button onclick="document.getElementById('tiempo').innerHTML = Date()">mostrar fecha y hora</button>
+    <p id="tiempo"></p>
+
+    <button onclick="activar();">Activar</button>
+    <div id="active"></div>
+
+    <div id="size" onmousemove="aumentar();" onmouseout="disminuye();" >este es un texto dinamico</div>
+    
+<h1>Operaciones aritmetica</h1>
+<div>
+    <h3>ingrese un numero</h3>
+    <input  id="numeroUno" type="number">
+</div>
+<div>
+    <h3>ingrese otro numero</h3>
+    <input id="numeroDos" type="number">
+</div>
+<hr>
+<div>
+    <button id="btn-calcular" onclick="operaciones();">Calcular</button>
+</div>
+<hr>
+<h1 id="suma">|</h1>
+<h1 id="resta">|</h1>
+<h1 id="multiplicacion">|</h1>
+<h1 id="division">|</h1>
+    <script src="script.js"></script>
+</body>
+</html>
