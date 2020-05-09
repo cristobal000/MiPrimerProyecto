@@ -1,0 +1,40 @@
+*{
+    /*color de fondo*/
+    /* background-color: rgb(21, 1607, 74); */
+    box-sizing: border-box;
+    /*padding genera espacios entre el borde de la pagina*/
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+body{
+    /*estilo de fuentes*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucgida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/*tamaño de letra*/
+font-size: 15px;
+}
+header{
+    /*color de fondo*/
+    background-color: rgb(21, 16, 100);
+    /*espacios entre los bordes de la pagina*/
+    padding:16px ;
+    /*aliniar los textos*/
+    text-align: center;
+    /*tamaño de letra*/
+    font-size: 34px;
+    /*color de letra*/
+    color: rgb(255, 255, 255);
+
+}
+.miprimeraclase{
+    font-size:15px ;
+    color: whitesmoke;
+    background-color: rgb(30, 24, 107);
+}
+.segundapagina{
+    font-size:15px ;
+    color: white;
+    background-color: rgb(8, 9, 110);
+    
+}

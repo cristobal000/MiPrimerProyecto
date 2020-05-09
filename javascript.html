@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Categoria</h3>
+    <select name="Categoria" id="Categoria" onchange="precio();">
+        <option value="1">Perfumeria</option>
+        <option value="2">Juguetes</option>
+        <option value="3">Tecnologia</option>
+    </select>
+    <h3>Producto</h3>
+    <select name="Producto" id="Producto" onchange="precio();">
+        <option value="1">Pergume Varon</option>
+        <option value="2">Perfume Dama</option>
+        <option value="3">Perfume niño</option>
+        <option value="4">Pista Hot wheels</option>
+        <option value="5">Muñeca Barbie</option>
+        <option value="6">Notebook</option>
+        <option value="7">Pendrive</option>
+        <option value="8">Cassette</option>
+    </select>
+    <p id="valor">valor $</p>
+    <p id="descto">descuento  %</p>
+    <script>
+        function precio(){
+            categoria = document.getElementById("Categoria").value;
+            producto = document.getElementById("Producto").value;
+
+            var valor;
+            var descto;
+
+            console.log("este es el value de categoria " + categoria)
+            console.log("este es el value de prooducto " + producto)
+
+            if (categoria == 1 && producto == 2)
+            {
+                valor = "15000"
+                descto= "20%"
+            }
+            
+            else if (categoria == 2 || producto ==3)
+            {
+                valor = "6000"
+                descto= "5%"
+            }
+
+            
+            else if (categoria == 3)
+            {
+                valor = "12000"
+                descto= "15%"
+            }
+            
+            else 
+            {
+                valor= "sin valor"
+            }
+
+            document.getElementById("valor").innerHTML= valor;
+            document.getElementById("descto").innerHTML= descto;
+
+            alert("el valor del producto es " + valor)
+        }    
+    </script>
+</body>
+</html>
